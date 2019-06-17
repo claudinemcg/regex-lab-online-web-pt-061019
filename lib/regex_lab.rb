@@ -24,7 +24,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
 end
 
 def valid_phone_number?(phone)
-  if phone.match(/^[0-9]{10}/)  then   
+  if phone.match(/\b\^[0-9]{10}\b/)  then   
     true
   else false
 end
